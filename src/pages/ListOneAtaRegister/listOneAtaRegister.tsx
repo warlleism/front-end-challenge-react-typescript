@@ -13,6 +13,7 @@ import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 import MeetingStatus from "@/components/meetingStatus/meetingStatus";
+import { IoIosLink } from "react-icons/io";
 
 
 export default function ListOneAtaRegister() {
@@ -34,6 +35,7 @@ export default function ListOneAtaRegister() {
     }
 
     if (!register) {
+        navigate("/atasRegister");
         return
     }
 
@@ -51,18 +53,33 @@ export default function ListOneAtaRegister() {
 
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
-                    <p className="ata-text-content font-semibold"><div>Status:</div>  <span >  <MeetingStatus status={register.status} /></span></p>
-                    <p className="ata-text-content font-semibold"><div>Plataforma:</div><span >{register.platform}</span></p>
-                    <p className="ata-text-content font-semibold"><div>Video chamada:</div><span >{register.videoCallLink}</span></p>
-                    <p className="ata-text-content font-semibold"><div>Data:</div><span >{register.date}</span></p>
-                    <p className="ata-text-content font-semibold"><div>Duração:</div><span >{register.duration}</span></p>
-                    <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
-                    <div className="ata-text-content flex flex-col gap-2">
-                        <h3 className="text-[#252628] text-[1.3rem] font-semibold">Pauta</h3>
-                        <span>{register.staff}</span>
+                    <div className="ata-text-content">
+                        <div>Status:</div>
+                        <MeetingStatus status={register?.status} />
+                    </div>
+                    <div className="ata-text-content">
+                        <div>Plataforma:</div>
+                        <div className="text-[#434343]">{register.platform}</div>
+                    </div>
+                    <div className="ata-text-content">
+                        <div>Video chamada:</div>
+                        <div className="flex flex-row gap-2 cursor-pointer" style={{ color: "#009DD9" }}><IoIosLink color="#00dd9" size={20} /> {register.videoCallLink}</div>
+                    </div>
+                    <div className="ata-text-content">
+                        <div>Data:</div>
+                        <div className="text-[#434343]">{register.date}</div>
+                    </div>
+                    <div className="ata-text-content">
+                        <div>Duração:</div>
+                        <div className="text-[#434343]">{register.duration}</div>
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
-                    <div className="ata-text-content flex flex-col gap-2">
+                    <div className="flex flex-col gap-2">
+                        <h3 className="text-[#252628] text-[1.3rem] font-semibold">Pauta</h3>
+                        <div className="text-[#434343] pl-[30px]">{register.staff}</div>
+                    </div>
+                    <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
+                    <div className="flex flex-col gap-2">
                         <h3 className="text-[#252628] text-[1.3rem] font-semibold">Participantes</h3>
                         <div className="card-ata-register-participants">
                             {
