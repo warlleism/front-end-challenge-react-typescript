@@ -12,6 +12,7 @@ import { FaCircle } from "react-icons/fa";
 import { useEffect } from "react";
 import { IoClose } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
+import MeetingStatus from "@/components/meetingStatus/meetingStatus";
 
 
 export default function ListOneAtaRegister() {
@@ -50,7 +51,7 @@ export default function ListOneAtaRegister() {
 
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
-                    <p className="ata-text-content font-semibold"><div>Status:</div>  <span >{register.status}</span></p>
+                    <p className="ata-text-content font-semibold"><div>Status:</div>  <span >  <MeetingStatus status={register.status} /></span></p>
                     <p className="ata-text-content font-semibold"><div>Plataforma:</div><span >{register.platform}</span></p>
                     <p className="ata-text-content font-semibold"><div>Video chamada:</div><span >{register.videoCallLink}</span></p>
                     <p className="ata-text-content font-semibold"><div>Data:</div><span >{register.date}</span></p>
