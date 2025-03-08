@@ -29,8 +29,8 @@ export default function AtasRegister() {
             <UserHeader User={User} />
 
             <div className="atas-register-result-header">
-                <h3 style={{ color: "#414141", fontWeight: 700 }}>46 RESULTADOS ENCONTRADOS</h3>
-                <div style={{ width: "100%", height: 2, backgroundColor: "#7A7E7F", borderRadius: 100 }} />
+                <h3 className="text-[#414141] font-bold">46 RESULTADOS ENCONTRADOS</h3>
+                <div className="w-full h-2 bg-[#7A7E7F] rounded-full" />
                 <div className="atas-register-result-header-filter">
                     <div className="atas-register-result-header-filter-toggler">
                         <div>PARTICIPANTES <IoMdArrowDropdown size={30} color="#4D4D4D" /></div>
