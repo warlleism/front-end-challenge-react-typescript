@@ -31,11 +31,11 @@ export default function ListOneAtaRegister() {
 
     const handleClose = () => {
         setRegister(null);
-        navigate("/atasRegister");
+        navigate("/");
     }
 
     if (!register) {
-        navigate("/atasRegister");
+        navigate("/");
         return
     }
 
