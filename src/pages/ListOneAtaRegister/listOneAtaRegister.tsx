@@ -34,8 +34,6 @@ export default function ListOneAtaRegister() {
         navigate("/atasRegister");
     }
 
-    // console.log(register)
-
     if (!register) {
         navigate("/atasRegister");
         return
@@ -65,7 +63,7 @@ export default function ListOneAtaRegister() {
                     </div>
                     <div className="ata-text-content">
                         <div>Video chamada:</div>
-                        <div className="flex flex-row gap-2 cursor-pointer" style={{ color: "#009DD9" }}><IoIosLink color="#00dd9" size={20} /> {register.videoCallLink}</div>
+                        <div className="flex flex-row gap-2 cursor-pointer font-semibold" style={{ color: "#009DD9" }}><IoIosLink color="#00dd9" size={20} /> {register.videoCallLink}</div>
                     </div>
                     <div className="ata-text-content">
                         <div>Data:</div>
