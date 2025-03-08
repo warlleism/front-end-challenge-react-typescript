@@ -1,0 +1,142 @@
+.main-atas-register-content {
+    width: 80%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+
+    @media (max-width: 1027px) {
+        width: 100%;
+    }
+
+    .atas-register-result-header {
+        gap: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .atas-register-result-header-filter {
+            display: flex;
+            width: 100%;
+            gap: 10px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .atas-register-result-header-filter-toggler {
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+            flex-wrap: wrap;
+
+                justify-content: space-between;
+
+                div {
+                    height: 35px;
+                    color: #808183;
+                    font-size: .7rem;
+                    font-weight: 500;
+                    box-sizing: border-box;
+                    padding: 5px 10px 5px 10px;
+                    border-radius: 100px;
+                    border: solid 1px #808183;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    cursor: pointer;
+                    transition: all .3s ease-in-out;
+                }
+
+                div:hover {
+                    background-color: #ffffff64;
+                }
+            }
+
+            .atas-register-result-header-filter-input {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+
+                input {
+                    outline: none;
+                    height: 35px;
+                    border-radius: 100px;
+                    border: solid 1px #808183;
+                    padding: 5px 10px 5px 10px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    transition: all .3s ease-in-out;
+                }
+
+                .icon-search {
+                    padding: 5px;
+                    cursor: pointer;
+                    border-radius: 100px;
+                    background-color: #28AADD;
+                }
+            }
+        }
+    }
+
+    .atas-register-result {
+        display: flex;
+        gap: 10px;
+        height: 70vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        scrollbar-width: thin;
+        scrollbar-color: #02020227 #08080800;
+        position: relative;
+        flex-direction: column;
+
+
+        .atas-register-result-item {
+            cursor: pointer;
+            position: relative;
+            padding: 15px;
+            width: 99%;
+            box-sizing: border-box;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            .main-atas-register-result-item-info {
+                display: flex;
+                gap: 10px;
+
+                .atas-register-result-item-info {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3 {
+                        gap: 10px;
+                        font-weight: 600;
+                        color: #303133;
+                    }
+
+                    p {
+                        color: #747879;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+
+            .atas-register-result-item-status {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: .8rem;
+                font-weight: 500;
+                font-family: "Roboto", sans-serif;
+            }
+
+        }
+
+    }
+
+
+}

@@ -1,0 +1,161 @@
+import User1 from "@/assets/ataRegister/user.png";
+const meetings = [
+    {
+        id: 1,
+        name: "[REUNI O 1 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "PENDENTE ASSINATURA",
+        participants: [User1, User1, User1],
+        duration: "1H 20M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 2,
+        name: "[REUNI O 2 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA PRELIMIBAR",
+        participants: [User1, User1, User1],
+        duration: "1H 45M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 3,
+        name: "[REUNI O 3 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "PENDENTE ASSINATURA",
+        participants: [User1, User1, User1],
+        duration: "2H 10M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 4,
+        name: "[REUNI O 4 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "PENDENTE ASSINATURA",
+        participants: [User1, User1, User1],
+        duration: "1H 50M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 5,
+        name: "[REUNI O 5 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "PENDENTE ASSINATURA",
+        participants: [User1, User1, User1],
+        duration: "2H 15M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 6,
+        name: "[REUNI O 6 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA DEFINITIVA",
+        participants: [User1, User1, User1],
+        duration: "1H 35M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 7,
+        name: "[REUNI O 7 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA PRELIMIBAR",
+        participants: [User1, User1, User1],
+        duration: "2H 25M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 8,
+        name: "[REUNI O 8 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA PRELIMIBAR",
+        participants: [User1, User1, User1],
+        duration: "1H 40M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+    },
+    {
+        id: 9,
+        name: "[REUNI O 9 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA DEFINITIVA",
+        participants: [User1, User1, User1],
+        duration: "2H 05M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 10,
+        name: "[REUNI O 10 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA DEFINITIVA",
+        participants: [User1, User1, User1],
+        duration: "1H 30M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 11,
+        name: "[REUNI O 11 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA PRELIMIBAR",
+        participants: [User1, User1, User1],
+        duration: "2H 20M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 12,
+        name: "[REUNI O 12 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "PENDENTE ASSINATURA",
+        participants: [User1, User1, User1],
+        duration: "1H 45M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+    {
+        id: 13,
+        name: "[REUNI O 13 COMCAP E PREF. FLORIAN POLIS]",
+        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        date: "06 DE JANEIRO | 17H",
+        status: "ATA DEFINITIVA",
+        participants: [User1, User1, User1],
+        duration: "2H 10M",
+        videoCallLink: "HTTPS://MEET.GOOGLE.COM/",
+        platform: "GOOGLE MEET",
+
+    },
+
+]
+
+export default meetings;
