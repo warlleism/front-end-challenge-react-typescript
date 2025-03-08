@@ -26,10 +26,10 @@ export default function Layout() {
             </div>
             <ul className="menu-ul-list">
                 <li className="menu-item" style={{ background: routerSelect === "home" ? "#E7F7FF" : "transparent" }}><a href="/" onClick={() => handleRouterSelect("home")}>Início</a></li>
-                <li className="menu-item" style={{ background: routerSelect === "about" ? "#E7F7FF" : "transparent" }}><a href="/challenger/atasRegister" onClick={() => handleRouterSelect("about")}>Registro de Atas</a></li>
-                <li className="menu-item" style={{ background: routerSelect === "signature" ? "#E7F7FF" : "transparent" }}><a href="/challenger/atasRegister" onClick={() => handleRouterSelect("signature")}>Assinatura<FaCircle color="red" size={13} className="ml-2 pointer-events-none animate-pulse" /></a></li>
-                <li className="menu-item" style={{ background: routerSelect === "calendar" ? "#E7F7FF" : "transparent" }}><a href="/challenger/atasRegister" onClick={() => handleRouterSelect("calendar")}>Calendário</a></li>
-                <li className="menu-item" style={{ background: routerSelect === "history" ? "#E7F7FF" : "transparent" }}><a href="/challenger/atasRegister" onClick={() => handleRouterSelect("history")}>Histórico</a></li>
+                <li className="menu-item" style={{ background: routerSelect === "about" ? "#E7F7FF" : "transparent" }}><a href="/atasRegister" onClick={() => handleRouterSelect("about")}>Registro de Atas</a></li>
+                <li className="menu-item" style={{ background: routerSelect === "signature" ? "#E7F7FF" : "transparent" }}><a href="/atasRegister" onClick={() => handleRouterSelect("signature")}>Assinatura<FaCircle color="red" size={13} className="ml-2 pointer-events-none animate-pulse" /></a></li>
+                <li className="menu-item" style={{ background: routerSelect === "calendar" ? "#E7F7FF" : "transparent" }}><a href="/atasRegister" onClick={() => handleRouterSelect("calendar")}>Calendário</a></li>
+                <li className="menu-item" style={{ background: routerSelect === "history" ? "#E7F7FF" : "transparent" }}><a href="/atasRegister" onClick={() => handleRouterSelect("history")}>Histórico</a></li>
             </ul>
             <div className="settings"><a href="/">Configurações</a></div>
         </div>

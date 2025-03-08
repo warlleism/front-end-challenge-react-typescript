@@ -10,7 +10,7 @@ import ListOneAtaRegister from "@/pages/ListOneAtaRegister/listOneAtaRegister";
 
 const NavigationConfig = () => {
     return (
-        <BrowserRouter basename="/challenger">
+        <BrowserRouter>
             <div className="router-container">
                 <div className="sidebar-mobile-toggler">
                     <CiMenuFries size={40} />
