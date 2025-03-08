@@ -9,6 +9,7 @@ import useStore from "@/store/atasRegisterStore";
 import { Meeting } from "@/@types/AtaType";
 import { useNavigate } from "react-router-dom";
 import UserHeader from "@/components/userHeader/userHeader";
+import { DropdownMenuRadio } from "@/components/dropDown/dropDown";
 
 export default function AtasRegister() {
 
@@ -30,12 +31,12 @@ export default function AtasRegister() {
 
             <div className="atas-register-result-header">
                 <h3 className="text-[#414141] font-bold">46 RESULTADOS ENCONTRADOS</h3>
-                <div className="w-full h-2 bg-[#7A7E7F] rounded-full" />
+                <div className="w-full h-[2px] bg-[#7A7E7F] rounded-full" />
                 <div className="atas-register-result-header-filter">
                     <div className="atas-register-result-header-filter-toggler">
-                        <div>PARTICIPANTES <IoMdArrowDropdown size={30} color="#4D4D4D" /></div>
-                        <div>STATUS <IoMdArrowDropdown size={30} color="#4D4D4D" /></div>
-                        <div>DATA <IoMdArrowDropdown size={30} color="#4D4D4D" /></div>
+                        <DropdownMenuRadio title="PARTICIPANTES" values={["TODOS", "ABERTO", "FECHADO", "CANCELADO"]} />
+                        <DropdownMenuRadio title="STATUS" values={["TODOS", "ABERTO", "FECHADO", "CANCELADO"]} />
+                        <DropdownMenuRadio title="DATA" values={["TODOS", "HOJE", "MANHA", "TARDE", "NOITE"]} />
                     </div>
                     <form className="atas-register-result-header-filter-input">
                         <input type="text" placeholder="Pesquisar..." />
