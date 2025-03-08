@@ -62,7 +62,7 @@ export default function ListOneAtaRegister() {
                     </div>
                     <div className="ata-text-content">
                         <div>Video chamada:</div>
-                        <div className="flex flex-row gap-2 cursor-pointer font-semibold" style={{ color: "#009DD9" }}><IoIosLink color="#00dd9" size={20} /> {register.videoCallLink}</div>
+                        <div className="flex flex-row gap-2 cursor-pointer font-semibold " style={{ color: "#009DD9" }}><IoIosLink color="#00dd9" size={20} /> {register.videoCallLink}</div>
                     </div>
                     <div className="ata-text-content">
                         <div>Data:</div>
@@ -75,7 +75,7 @@ export default function ListOneAtaRegister() {
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
                     <div className="flex flex-col gap-2">
                         <h3 className="text-[#252628] text-[1.3rem] font-semibold">Pauta</h3>
-                        <div className="text-[#434343] font-semibold pl-[30px]">{register.staff}</div>
+                        <div className="text-[#434343] font-semibold xl:pl-[30px]">{register.staff}</div>
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
                     <div className="flex flex-col gap-2">
