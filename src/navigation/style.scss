@@ -32,6 +32,10 @@
         height: 100vh;
         box-sizing: border-box;
 
+        @media (max-width: 1027px) {
+            height: 100%;
+        }
+
         @media (max-width: 1750px) {
             width: 70%;
         }

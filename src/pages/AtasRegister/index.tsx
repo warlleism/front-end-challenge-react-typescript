@@ -55,9 +55,7 @@ export default function AtasRegister() {
                                 <p>{meeting.date}</p>
                             </div>
                         </div>
-                        <div className="atas-register-result-item-status">
-                            <MeetingStatus status={meeting.status} />
-                        </div>
+                        <MeetingStatus status={meeting.status} position={true} />
                     </div>
                 ))}
             </div>

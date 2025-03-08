@@ -1,6 +1,5 @@
-export default function MeetingStatus({ status }: { status: string }) {
-
-    console.log(status)
+import "./style.scss"
+export default function MeetingStatus({ status, position }: { status: string, position?: boolean }) {
 
     const statusColor: any = {
         "ATA DEFINITIVA": ["#E0E7DC", "#164300"],
@@ -8,17 +7,12 @@ export default function MeetingStatus({ status }: { status: string }) {
         "PENDENTE ASSINATURA": ["#EEE7DC", "#473219"],
     }
     return (
-        <div style={{
-            fontSize: 12,
-            width: "190px",
-            textAlign: "center",
-            padding: "5px 10px",
-            borderRadius: 100,
-            fontWeight: 700,
-            color: statusColor?.[status]?.[1],
-            boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.1)",
-            backgroundColor: statusColor?.[status]?.[0]
-        }}>{status}
+        <div
+            className={`statusContainer ${position === false ? "" : "absolute"}`}
+            style={{
+                color: statusColor?.[status]?.[1],
+                backgroundColor: statusColor?.[status]?.[0]
+            }}>{status}
         </div>
     )
 }

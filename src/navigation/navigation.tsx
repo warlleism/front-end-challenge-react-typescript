@@ -2,6 +2,7 @@ import ListOneAtaRegister from "@/pages/ListOneAtaRegister/listOneAtaRegister";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import AtasRegister from "@/pages/AtasRegister";
+import { CiMenuFries } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import Layout from "@/layout/Layout";
 import "./style.scss";
@@ -10,6 +11,9 @@ const NavigationConfig = () => {
     return (
         <BrowserRouter>
             <div className="router-container">
+                <div className="sidebar-mobile-toggler">
+                    <CiMenuFries size={40} />
+                </div>
                 <div className="sidebar">
                     <Layout />
                 </div>
