@@ -1,12 +1,12 @@
+import ListOneAtaRegister from "@/pages/ListOneAtaRegister/listOneAtaRegister";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "@/layout/Layout";
-import "./style.scss";
-import Home from "@/pages/Home";
+import { Button } from "@/components/ui/button";
 import AtasRegister from "@/pages/AtasRegister";
 import { CiMenuFries } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
-import ListOneAtaRegister from "@/pages/ListOneAtaRegister/listOneAtaRegister";
+import Layout from "@/layout/Layout";
+import Home from "@/pages/Home";
+import "./style.scss";
 
 const NavigationConfig = () => {
     return (
