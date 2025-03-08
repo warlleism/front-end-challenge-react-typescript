@@ -19,7 +19,7 @@ export default function Layout() {
     return (
         <div className="main-layout-container">
             <div className="layout-header">
-                <a href="/" onClick={() => handleRouterSelect("home")}> <img src={Logo} alt="Logo" className="layout-logo" /></a>
+                <a className="layout-logo" href="/" onClick={() => handleRouterSelect("home")}> <img src={Logo} alt="Logo" className="layout-logo" /></a>
                 <ButtonIconStyled>
                     <CirclePlus className="icon-plus" /> Nova Reunião Com Ata
                 </ButtonIconStyled>

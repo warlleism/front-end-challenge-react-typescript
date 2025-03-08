@@ -18,7 +18,9 @@
         flex-direction: column;
 
         .layout-logo {
-            width: 70%;
+            display: flex;
+            justify-content: center;
+            width: 100%;
             object-fit: contain;
         }  
     }

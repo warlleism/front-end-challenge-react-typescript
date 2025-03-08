@@ -1,9 +1,10 @@
 import User1 from "@/assets/ataRegister/user.png";
+
 const meetings = [
     {
         id: 1,
-        name: "[REUNI O 1 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DA SEMANA]",
+        staff: "PLANEJAMENTO DA SEMANA",
         date: "06 DE JANEIRO | 17H",
         status: "PENDENTE ASSINATURA",
         participants: [User1, User1, User1],
@@ -14,8 +15,8 @@ const meetings = [
     },
     {
         id: 2,
-        name: "[REUNI O 2 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE AVALIAÇÃO DE DESEMPENHO]",
+        staff: "AVALIAÇÃO DE DESEMPENHO",
         date: "06 DE JANEIRO | 17H",
         status: "ATA PRELIMIBAR",
         participants: [User1, User1, User1],
@@ -26,8 +27,8 @@ const meetings = [
     },
     {
         id: 3,
-        name: "[REUNI O 3 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DA LOJA]",
+        staff: "PLANEJAMENTO DA LOJA",
         date: "06 DE JANEIRO | 17H",
         status: "PENDENTE ASSINATURA",
         participants: [User1, User1, User1],
@@ -38,8 +39,8 @@ const meetings = [
     },
     {
         id: 4,
-        name: "[REUNI O 4 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE ANÁLISE DE DADOS]",
+        staff: "ANÁLISE DE DADOS",
         date: "06 DE JANEIRO | 17H",
         status: "PENDENTE ASSINATURA",
         participants: [User1, User1, User1],
@@ -50,8 +51,8 @@ const meetings = [
     },
     {
         id: 5,
-        name: "[REUNI O 5 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE MARKETING]",
+        staff: "MARKETING",
         date: "06 DE JANEIRO | 17H",
         status: "PENDENTE ASSINATURA",
         participants: [User1, User1, User1],
@@ -62,8 +63,8 @@ const meetings = [
     },
     {
         id: 6,
-        name: "[REUNI O 6 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE VENDAS]",
+        staff: "VENDAS",
         date: "06 DE JANEIRO | 17H",
         status: "ATA DEFINITIVA",
         participants: [User1, User1, User1],
@@ -74,8 +75,8 @@ const meetings = [
     },
     {
         id: 7,
-        name: "[REUNI O 7 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE PRODUÇÃO]",
+        staff: "PRODUÇÃO",
         date: "06 DE JANEIRO | 17H",
         status: "ATA PRELIMIBAR",
         participants: [User1, User1, User1],
@@ -86,8 +87,8 @@ const meetings = [
     },
     {
         id: 8,
-        name: "[REUNI O 8 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE LOGÍSTICA]",
+        staff: "LOGÍSTICA",
         date: "06 DE JANEIRO | 17H",
         status: "ATA PRELIMIBAR",
         participants: [User1, User1, User1],
@@ -97,8 +98,8 @@ const meetings = [
     },
     {
         id: 9,
-        name: "[REUNI O 9 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE FINANÇAS]",
+        staff: "FINANÇAS",
         date: "06 DE JANEIRO | 17H",
         status: "ATA DEFINITIVA",
         participants: [User1, User1, User1],
@@ -109,8 +110,8 @@ const meetings = [
     },
     {
         id: 10,
-        name: "[REUNI O 10 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE RH]",
+        staff: "RH",
         date: "06 DE JANEIRO | 17H",
         status: "ATA DEFINITIVA",
         participants: [User1, User1, User1],
@@ -121,8 +122,8 @@ const meetings = [
     },
     {
         id: 11,
-        name: "[REUNI O 11 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE TI]",
+        staff: "TI",
         date: "06 DE JANEIRO | 17H",
         status: "ATA PRELIMIBAR",
         participants: [User1, User1, User1],
@@ -133,8 +134,8 @@ const meetings = [
     },
     {
         id: 12,
-        name: "[REUNI O 12 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE COMPRAS]",
+        staff: "COMPRAS",
         date: "06 DE JANEIRO | 17H",
         status: "PENDENTE ASSINATURA",
         participants: [User1, User1, User1],
@@ -145,8 +146,8 @@ const meetings = [
     },
     {
         id: 13,
-        name: "[REUNI O 13 COMCAP E PREF. FLORIAN POLIS]",
-        staff: "DISCUSS O DE REAJUSTE ANUAL DE TAXA DE COLETA",
+        name: "[REUNIÃO DE PLANEJAMENTO DE CONTABILIDADE]",
+        staff: "CONTABILIDADE",
         date: "06 DE JANEIRO | 17H",
         status: "ATA DEFINITIVA",
         participants: [User1, User1, User1],
