@@ -37,7 +37,7 @@ export function DropdownMenuRadio({ values, title }: { values: string[], title: 
                             <DropdownMenuRadioItem
                                 key={value}
                                 value={value}
-                                className="flex items-center gap-2 rounded-md px-2 py-1 text-sm "
+                                className="flex items-center gap-2 rounded-md text-sm "
                             >
                                 {value}
                             </DropdownMenuRadioItem>

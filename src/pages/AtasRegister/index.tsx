@@ -1,6 +1,5 @@
 import "./style.scss";
 import User from "@/assets/ataRegister/user.png";
-import { IoMdArrowDropdown } from "react-icons/io";
 import { CiSearch } from "react-icons/ci";
 import meetings from "./meetings";
 import MeetingStatus from "@/components/meetingStatus/meetingStatus";
