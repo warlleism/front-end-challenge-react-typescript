@@ -120,11 +120,10 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   body {
     @apply bg-background text-foreground;
   }
 }
-

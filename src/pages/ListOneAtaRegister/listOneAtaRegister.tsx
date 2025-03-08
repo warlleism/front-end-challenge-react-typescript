@@ -73,13 +73,13 @@ export default function ListOneAtaRegister() {
                         <div className="text-[#434343] font-semibold">{register.duration}</div>
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
-                    <div className="flex flex-col gap-2">
-                        <h3 className="text-[#252628] text-[1.3rem] font-semibold">Pauta</h3>
+                    <div className="flex flex-col gap-2 ata-text-content">
+                        <h3 className="text-[#252628] text-[1.1rem] font-semibold">Pauta</h3>
                         <div className="text-[#434343] font-semibold xl:pl-[30px]">{register.staff}</div>
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
-                    <div className="flex flex-col gap-2">
-                        <h3 className="text-[#252628] text-[1.3rem] font-semibold">Participantes</h3>
+                    <div className="flex flex-col gap-2 ata-text-content">
+                        <h3 className="text-[#252628] text-[1.1rem] font-semibold">Participantes</h3>
                         <div className="card-ata-register-participants">
                             {
                                 register.participants.map((participant: string, index: number) => (
