@@ -34,6 +34,8 @@ export default function ListOneAtaRegister() {
         navigate("/atasRegister");
     }
 
+    // console.log(register)
+
     if (!register) {
         navigate("/atasRegister");
         return
