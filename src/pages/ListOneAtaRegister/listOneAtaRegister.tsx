@@ -59,7 +59,7 @@ export default function ListOneAtaRegister() {
                     </div>
                     <div className="ata-text-content">
                         <div>Plataforma:</div>
-                        <div className="text-[#434343]">{register.platform}</div>
+                        <div className="text-[#434343] font-semibold">{register.platform}</div>
                     </div>
                     <div className="ata-text-content">
                         <div>Video chamada:</div>
@@ -67,16 +67,16 @@ export default function ListOneAtaRegister() {
                     </div>
                     <div className="ata-text-content">
                         <div>Data:</div>
-                        <div className="text-[#434343]">{register.date}</div>
+                        <div className="text-[#434343] font-semibold">{register.date}</div>
                     </div>
                     <div className="ata-text-content">
                         <div>Duração:</div>
-                        <div className="text-[#434343]">{register.duration}</div>
+                        <div className="text-[#434343] font-semibold">{register.duration}</div>
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
                     <div className="flex flex-col gap-2">
                         <h3 className="text-[#252628] text-[1.3rem] font-semibold">Pauta</h3>
-                        <div className="text-[#434343] pl-[30px]">{register.staff}</div>
+                        <div className="text-[#434343] font-semibold pl-[30px]">{register.staff}</div>
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
                     <div className="flex flex-col gap-2">
