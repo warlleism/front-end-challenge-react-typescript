@@ -11,12 +11,13 @@ import { FaCircle } from "react-icons/fa";
 import { useRef, useState } from "react";
 import meetings from "./meetings";
 import "./style.scss";
+import { IoIosClose } from "react-icons/io";
 
 export default function AtasRegister() {
 
     const { setRegister } = useStore();
     let [loading, setLoading] = useState(false);
-    const [filteredRegister, setFilteredRegister] = useState<Meeting[]>(meetings);
+    const [filteredRegister, setFilteredRegister] = useState<Meeting[]>([]);
     const inputRef = useRef<HTMLInputElement>(null);
     const navigate = useNavigate();
 
@@ -47,7 +48,8 @@ export default function AtasRegister() {
         <div className="main-atas-register-content">
             <UserHeader User={User} />
             <div className="atas-register-result-header">
-                <h3 className="text-[#414141] font-bold">{registers.length} RESULTADOS ENCONTRADOS</h3>
+
+                <h3 className="text-[#414141] font-bold">{registers.length} {registers.length === 1 || filteredRegister.length === 1 ? "RESULTADO ENCONTRADO" : "RESULTADOS ENCONTRADOS"}</h3>
                 <div className="w-full h-[2px] bg-[#7A7E7F] rounded-full" />
                 <div className="atas-register-result-header-filter">
                     <div className="atas-register-result-header-filter-toggler">
@@ -65,6 +67,7 @@ export default function AtasRegister() {
                 </div>
             </div>
             <div className="atas-register-result">
+                {filteredRegister.length > 0 ? <span onClick={() => setFilteredRegister([])} className="flex flex-row  items-center cursor-pointer">Limpar Filtros <IoIosClose size={30} /></span> : null}
                 {registers.map((meeting) => (
                     <div key={meeting.id} className="atas-register-result-item" onClick={() => handleSetRegister(meeting)}>
                         <div className="main-atas-register-result-item-info">

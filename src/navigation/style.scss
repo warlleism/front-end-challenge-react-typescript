@@ -46,34 +46,25 @@
 
     }
 
-    .support {
-        width: 100%;
-        right: 10px;
-        bottom: 10px;
-        z-index: 1000;
-        display: flex;
+    .support-button {
         position: fixed;
+        bottom: 20px;
+        right: 20px;
+        gap: 10px;
+        color: #fff;
+        display: flex;
         align-items: center;
         justify-content: center;
+        background-color: #00A9F6;
+        height: 30px;
+        border-radius: 5px;
+        width: 170px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
 
-        .support-button {
-            gap: 10px;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #00A9F6;
-            height: 30px;
-            border-radius: 5px;
-            width: 170px;
-            cursor: pointer;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .support-button:hover {
-            background-color: #0088E1;
-        }
-
+    .support-button:hover {
+        background-color: #0088E1;
     }
 
 

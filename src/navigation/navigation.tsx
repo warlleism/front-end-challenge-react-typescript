@@ -23,9 +23,7 @@ const NavigationConfig = () => {
                         <Route path="/listOneAtaRegister" element={<ListOneAtaRegister />} />
                     </Routes>
                 </div>
-                <div className="support">
-                    <Button className="support-button"><FaWhatsapp /> Suporte</Button>
-                </div>
+                <Button className="support-button"><FaWhatsapp /> Suporte</Button>
             </div>
         </BrowserRouter>
     );
