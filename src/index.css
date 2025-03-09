@@ -127,3 +127,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+[data-slot="dropdown-menu-trigger"] {
+  border-radius: 100px;
+}
