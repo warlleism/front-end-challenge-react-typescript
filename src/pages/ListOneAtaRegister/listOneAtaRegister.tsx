@@ -48,7 +48,7 @@ export default function ListOneAtaRegister() {
                             <FaCircle color="green" size={13} className="mt-[4px] animate-pulse" />
                             <h3 className="text-[#363636] title-ata-register">{register.name}</h3>
                         </div>
-                        <IoClose size={30} color="#363636" className="cursor-pointer" onClick={() => handleClose()} />
+                        <IoClose color="#363636" className="cursor-pointer text-[20px] sm:text-[30px]" onClick={() => handleClose()} />
                     </div>
                     <div className="h-[1px] w-full bg-[#4141412e] rounded-full mb-5 mt-5" />
                     <div className="ata-text-content">

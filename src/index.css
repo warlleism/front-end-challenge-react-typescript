@@ -131,3 +131,7 @@
 [data-slot="dropdown-menu-trigger"] {
   border-radius: 100px;
 }
+
+body {
+  background: #dadedf;
+}

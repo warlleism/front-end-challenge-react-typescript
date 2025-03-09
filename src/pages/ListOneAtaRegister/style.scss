@@ -37,11 +37,17 @@
 
             @media (max-width: 1027px) {
                 width: 100%;
+                padding: 10px;
             }
 
             .title-ata-register {
                 font-weight: 700;
                 font-size: 1.3rem;
+
+                @media (max-width: 600px) {
+                    font-size: .7rem;
+                    letter-spacing: -.8px;
+                }
             }
 
             .ata-text-content {
