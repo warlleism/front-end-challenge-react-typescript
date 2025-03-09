@@ -96,6 +96,10 @@
         position: relative;
         flex-direction: column;
 
+        @media (max-width: 664px) {
+            height: 100%;
+        }
+
 
         .atas-register-result-item {
             cursor: pointer;

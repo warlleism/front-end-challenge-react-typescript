@@ -61,6 +61,11 @@
         width: 170px;
         cursor: pointer;
         transition: all 0.3s ease-in-out;
+
+        @media (max-width: 1027px) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 
     .support-button:hover {
