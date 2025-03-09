@@ -26,7 +26,7 @@
                 display: flex;
                 gap: 10px;
                 flex-direction: row;
-            flex-wrap: wrap;
+                flex-wrap: wrap;
 
                 justify-content: space-between;
 
@@ -71,9 +71,14 @@
                 }
 
                 .icon-search {
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
                     padding: 5px;
                     cursor: pointer;
+                    align-items: center;
                     border-radius: 100px;
+                    justify-content: center;
                     background-color: #28AADD;
                 }
             }

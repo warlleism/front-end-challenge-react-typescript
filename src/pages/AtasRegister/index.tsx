@@ -1,6 +1,7 @@
 import MeetingStatus from "@/components/meetingStatus/meetingStatus";
 import { DropdownMenuRadio } from "@/components/dropDown/dropDown";
 import UserHeader from "@/components/userHeader/userHeader";
+import Spinner from "@/components/spinner/spinner";
 import User from "@/assets/ataRegister/user.png";
 import useStore from "@/store/atasRegisterStore";
 import { useNavigate } from "react-router-dom";
@@ -14,6 +15,7 @@ import "./style.scss";
 export default function AtasRegister() {
 
     const { setRegister } = useStore();
+    let [loading, setLoading] = useState(false);
     const [filteredRegister, setFilteredRegister] = useState<Meeting[]>(meetings);
     const inputRef = useRef<HTMLInputElement>(null);
     const navigate = useNavigate();
@@ -25,14 +27,18 @@ export default function AtasRegister() {
     }
 
     const handleSearch = (event: React.FormEvent<HTMLFormElement> | React.MouseEvent<SVGElement, MouseEvent>) => {
+        setLoading(true);
         event.preventDefault();
-        let searchValue = "";
+        setTimeout(() => {
+            let searchValue = "";
 
-        if (inputRef.current)
-            searchValue = inputRef.current.value.toLowerCase();
+            if (inputRef.current)
+                searchValue = inputRef.current.value.toLowerCase();
 
-        const filtered = meetings.filter((meeting) => meeting.name.toLowerCase().includes(searchValue))
-        setFilteredRegister(filtered);
+            const filtered = meetings.filter((meeting) => meeting.name.toLowerCase().includes(searchValue))
+            setFilteredRegister(filtered);
+            setLoading(false);
+        }, 1000)
     };
 
     const registers = filteredRegister.length > 0 ? filteredRegister : meetings
@@ -41,7 +47,7 @@ export default function AtasRegister() {
         <div className="main-atas-register-content">
             <UserHeader User={User} />
             <div className="atas-register-result-header">
-                <h3 className="text-[#414141] font-bold">46 RESULTADOS ENCONTRADOS</h3>
+                <h3 className="text-[#414141] font-bold">{registers.length} RESULTADOS ENCONTRADOS</h3>
                 <div className="w-full h-[2px] bg-[#7A7E7F] rounded-full" />
                 <div className="atas-register-result-header-filter">
                     <div className="atas-register-result-header-filter-toggler">
@@ -51,7 +57,10 @@ export default function AtasRegister() {
                     </div>
                     <form className="atas-register-result-header-filter-input" onSubmit={handleSearch}>
                         <input type="text" placeholder="Pesquisar..." ref={inputRef} />
-                        <CiSearch size={30} color="#fff" className="icon-search" onClick={handleSearch} />
+                        <div className="icon-search">
+                            <Spinner loading={loading} />
+                            {!loading && <CiSearch size={25} onClick={handleSearch} />}
+                        </div>
                     </form>
                 </div>
             </div>
