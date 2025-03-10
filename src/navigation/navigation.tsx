@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import AtasRegister from "@/pages/AtasRegister";
 import { CiMenuFries } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-import Layout from "@/layout/Layout";
 import "./style.scss";
+import Layout from "./Layout";
 
 const NavigationConfig = () => {
     return (
