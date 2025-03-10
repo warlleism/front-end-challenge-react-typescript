@@ -48,7 +48,6 @@ export default function AtasRegister() {
         <div className="main-atas-register-content">
             <UserHeader User={User} />
             <div className="atas-register-result-header">
-
                 <h3 className="text-[#414141] font-bold">{registers.length} {registers.length === 1 || filteredRegister.length === 1 ? "RESULTADO ENCONTRADO" : "RESULTADOS ENCONTRADOS"}</h3>
                 <div className="w-full h-[2px] bg-[#7A7E7F] rounded-full" />
                 <div className="atas-register-result-header-filter">
