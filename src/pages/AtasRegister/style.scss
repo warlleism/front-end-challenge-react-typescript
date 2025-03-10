@@ -91,15 +91,14 @@
         height: 70vh;
         overflow-y: auto;
         overflow-x: hidden;
-        scrollbar-width: thin;
-        scrollbar-color: #02020227 #08080800;
         position: relative;
+        scrollbar-width: thin;
         flex-direction: column;
+        scrollbar-color: #02020227 #08080800;
 
         @media (max-width: 664px) {
             height: 100%;
         }
-
 
         .atas-register-result-item {
             cursor: pointer;

@@ -5,7 +5,7 @@ import AtasRegister from "@/pages/AtasRegister";
 import { CiMenuFries } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import "./style.scss";
-import Layout from "./Layout";
+import Layout from "./layout";
 
 const NavigationConfig = () => {
     return (
