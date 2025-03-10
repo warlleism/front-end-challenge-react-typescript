@@ -31,7 +31,7 @@ export default function AtasRegister() {
         if (inputRef.current) {
             inputRef.current.value = "";
         }
-        setFilteredRegister(meetings);
+        setFilteredRegister([]);
     }
 
     const handleSearch = (event: React.FormEvent<HTMLFormElement> | React.MouseEvent<SVGElement, MouseEvent>) => {
