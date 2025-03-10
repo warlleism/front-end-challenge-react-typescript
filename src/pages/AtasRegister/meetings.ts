@@ -1,4 +1,4 @@
-import User1 from "@/assets/ataRegister/user.png";
+import User1 from "@/assets/ataRegister/user.jpg";
 
 const meetings = [
     {

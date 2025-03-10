@@ -2,7 +2,7 @@ import MeetingStatus from "@/components/meetingStatus/meetingStatus";
 import { DropdownMenuRadio } from "@/components/dropDown/dropDown";
 import UserHeader from "@/components/userHeader/userHeader";
 import Spinner from "@/components/spinner/spinner";
-import User from "@/assets/ataRegister/user.png";
+import User from "@/assets/ataRegister/user.jpg";
 import useStore from "@/store/atasRegisterStore";
 import { useNavigate } from "react-router-dom";
 import { IoIosClose } from "react-icons/io";

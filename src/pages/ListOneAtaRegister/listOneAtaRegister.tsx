@@ -4,7 +4,7 @@ import UserHeader from "@/components/userHeader/userHeader";
 import { HiOutlineAnnotation } from "react-icons/hi";
 import { AiOutlineSignature } from "react-icons/ai";
 import { CiEdit, CiExport } from "react-icons/ci";
-import User from "@/assets/ataRegister/user.png";
+import User from "@/assets/ataRegister/user.jpg";
 import useStore from "@/store/atasRegisterStore";
 import { MdDeleteOutline } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
