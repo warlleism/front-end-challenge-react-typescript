@@ -1,19 +1,19 @@
-import useStore from "@/store/atasRegisterStore";
-import "./style.scss";
+import { ButtonIconStyled } from "@/components/buttonIcon/buttonIcon";
+import MeetingStatus from "@/components/meetingStatus/meetingStatus";
+import UserHeader from "@/components/userHeader/userHeader";
+import { HiOutlineAnnotation } from "react-icons/hi";
 import { AiOutlineSignature } from "react-icons/ai";
 import { CiEdit, CiExport } from "react-icons/ci";
-import { MdDeleteOutline } from "react-icons/md";
-import { HiOutlineAnnotation } from "react-icons/hi";
-import { GiRead } from "react-icons/gi";
-import { ButtonIconStyled } from "@/components/buttonIcon/buttonIcon";
-import UserHeader from "@/components/userHeader/userHeader";
 import User from "@/assets/ataRegister/user.png";
-import { FaCircle } from "react-icons/fa";
-import { useEffect } from "react";
-import { IoClose } from "react-icons/io5";
+import useStore from "@/store/atasRegisterStore";
+import { MdDeleteOutline } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
-import MeetingStatus from "@/components/meetingStatus/meetingStatus";
 import { IoIosLink } from "react-icons/io";
+import { FaCircle } from "react-icons/fa";
+import { IoClose } from "react-icons/io5";
+import { GiRead } from "react-icons/gi";
+import { useEffect } from "react";
+import "./style.scss";
 
 
 export default function ListOneAtaRegister() {
@@ -80,11 +80,9 @@ export default function ListOneAtaRegister() {
                     <div className="flex flex-col gap-2 ata-text-content">
                         <h3 className="text-[#252628] text-[1.1rem] font-semibold">Participantes</h3>
                         <div className="card-ata-register-participants">
-                            {
-                                register.participants.map((participant: string, index: number) => (
-                                    <img className="image-participant" key={index} src={participant} alt="participant" />
-                                ))
-                            }
+                            {register.participants.map((participant: string, index: number) => (
+                                <img className="image-participant" key={index} src={participant} alt="participant" />
+                            ))}
                         </div>
                     </div>
                 </div>

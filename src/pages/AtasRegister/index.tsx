@@ -5,13 +5,13 @@ import Spinner from "@/components/spinner/spinner";
 import User from "@/assets/ataRegister/user.png";
 import useStore from "@/store/atasRegisterStore";
 import { useNavigate } from "react-router-dom";
+import { IoIosClose } from "react-icons/io";
 import { Meeting } from "@/@types/AtaType";
 import { CiSearch } from "react-icons/ci";
 import { FaCircle } from "react-icons/fa";
 import { useRef, useState } from "react";
 import meetings from "./meetings";
 import "./style.scss";
-import { IoIosClose } from "react-icons/io";
 
 export default function AtasRegister() {
 
