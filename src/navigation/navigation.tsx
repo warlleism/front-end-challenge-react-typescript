@@ -1,12 +1,11 @@
 import ListOneAtaRegister from "@/pages/ListOneAtaRegister/listOneAtaRegister";
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import AtasRegister from "@/pages/AtasRegister";
 import { CiMenuFries } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
-import Layout from "./layout";
 import "./style.scss";
-import { BrowserRouter } from "react-router-dom";
+import Layout from "./layout";
 
 const NavigationConfig = () => {
     return (
@@ -20,16 +19,13 @@ const NavigationConfig = () => {
                 </div>
                 <div className="main-content">
                     <Routes>
-                        <Route path="/" element={<AtasRegister />}>
-                            <Route index element={<AtasRegister />} />
-                            <Route path="listOneAtaRegister" element={<ListOneAtaRegister />} />
-                        </Route>
+                        <Route path="/" element={<AtasRegister />} />
+                        <Route path="/listOneAtaRegister" element={<ListOneAtaRegister />} />
                     </Routes>
                 </div>
                 <Button className="support-button"><FaWhatsapp /> Suporte</Button>
             </div>
         </BrowserRouter>
-
     );
 };
 
