@@ -1,8 +1,11 @@
+import { BrowserRouter } from "react-router-dom";
 import NavigationConfig from "./navigation/navigation";
 
 const App = () => {
   return (
-    <NavigationConfig />
+    <BrowserRouter>
+      <NavigationConfig />
+    </BrowserRouter>
   );
 };
 
