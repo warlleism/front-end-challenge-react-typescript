@@ -27,14 +27,22 @@ export default function AtasRegister() {
         navigate("/listOneAtaRegister");
     }
 
+    const handleClearSearch = () => {
+        if (inputRef.current) {
+            inputRef.current.value = "";
+        }
+        setFilteredRegister(meetings);
+    }
+
     const handleSearch = (event: React.FormEvent<HTMLFormElement> | React.MouseEvent<SVGElement, MouseEvent>) => {
         setLoading(true);
         event.preventDefault();
         setTimeout(() => {
             let searchValue = "";
 
-            if (inputRef.current)
+            if (inputRef.current) {
                 searchValue = inputRef.current.value.toLowerCase();
+            }
 
             const filtered = meetings.filter((meeting) => meeting.name.toLowerCase().includes(searchValue))
             setFilteredRegister(filtered);
@@ -66,7 +74,9 @@ export default function AtasRegister() {
                 </div>
             </div>
             <div className="atas-register-result">
-                {filteredRegister.length > 0 ? <span onClick={() => setFilteredRegister([])} className="flex flex-row  items-center cursor-pointer">Limpar Filtros <IoIosClose size={30} /></span> : null}
+                {filteredRegister.length > 0 ? <span
+                    onClick={handleClearSearch}
+                    className="flex flex-row  items-center cursor-pointer">Limpar Filtros <IoIosClose size={30} /></span> : null}
                 {registers.map((meeting) => (
                     <div key={meeting.id} className="atas-register-result-item" onClick={() => handleSetRegister(meeting)}>
                         <div className="main-atas-register-result-item-info">
