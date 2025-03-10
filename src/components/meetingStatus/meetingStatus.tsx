@@ -3,7 +3,7 @@ export default function MeetingStatus({ status, position }: { status: string, po
 
     const statusColor: any = {
         "ATA DEFINITIVA": ["#E0E7DC", "#164300"],
-        "ATA PRELIMIBAR": ["#FAF8DA", "#51340D"],
+        "ATA PRELIMINAR": ["#FAF8DA", "#51340D"],
         "PENDENTE ASSINATURA": ["#EEE7DC", "#473219"],
     }
     return (
